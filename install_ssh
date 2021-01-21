@@ -1,7 +1,6 @@
 https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh
 
 Lifecycle
-
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/mattbowa/app.git
