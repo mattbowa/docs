@@ -1,5 +1,3 @@
-http://192.168.0.74/  default apache web server
-http://192.168.0.74/pgadmin4/browser/ --pgAmin4
 
 https://cloudcone.com/docs/article/how-to-install-postgresql-11-on-ubuntu-18-04/ -- install postgresql-11-on-ubuntu-18-04/
 [REMEMBER the password prompt]
@@ -67,8 +65,17 @@ sudo apt-get update
 sudo apt-get upgrade
 
 
-Set up static ip
+#Set up static ip
 https://www.howtoforge.com/linux-basics-set-a-static-ip-on-ubuntu
 
 Killing a process on a port
 kill $(lsof -t -i:8000)
+
+#Clearing some space for the filesystem:
+sudo find /var/log -type f -delete
+sudo rm -rf /var/cache/apt/*
+sudo apt clean all
+
+
+#When error hash mismatch when installing docker:
+https://stackoverflow.com/questions/61192026/how-do-i-solve-hash-sum-mismatch-on-apt-get-install-docker-ce
